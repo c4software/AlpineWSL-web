@@ -1,4 +1,5 @@
 # AlpineWSL-web
+
 Alpine Linux on WSL (Windows 10 1803 or later) with pre-installed web development tools
 based on [wsldl](https://github.com/yuk7/wsldl) and [AlpineWSL](https://github.com/yuk7/AlpineWSL)
 
@@ -12,7 +13,9 @@ based on [wsldl](https://github.com/yuk7/wsldl) and [AlpineWSL](https://github.c
 ### [Download](https://github.com/c4software/AlpineWSL-web/releases/latest)
 
 ## What's included?
+
 This distribution comes with essential web development tools pre-installed:
+
 - **PHP 8.3** with extensions:
   - php83-tokenizer
   - php83-session
@@ -32,21 +35,25 @@ This distribution comes with essential web development tools pre-installed:
 Perfect for getting started with web development on WSL without the hassle of setting up your environment!
 
 ## Requirements
+
 * Windows 10 1803 April 2018 Update x64 or later.
 * Windows Subsystem for Linux feature is enabled.
 
 ## Install
+
 #### 1. [Download](https://github.com/c4software/AlpineWSL-web/releases/latest) installer zip
 
 #### 2. Extract all files in zip file to same directory
 
 #### 3.Run Alpine.exe to Extract rootfs and Register to WSL
+
 Exe filename is using to the instance name to register.
 If you rename it, you can register with a different name and have multiple installs.
 
-
 ## How-to-Use(for Installed Instance)
+
 #### exe Usage
+
 ```dos
 Usage :
     <no args>
@@ -84,22 +91,25 @@ Usage :
       - Print this usage message.
 ```
 
-
 #### How to uninstall instance
+
 ```dos
->Alpine.exe clean
+Alpine.exe clean
 
 ```
 
 ## How-to-Build
+
 AlpineWSL-web can build on GNU/Linux or WSL.
 
 `curl`,`bsdtar`,`tar`(gnu) and `sudo` is required for build.
+
 ```shell
 $ make
 ```
 
 ### Basic Params
+
 |  Parameter |  Value  |  Default  |
 | ---- | ---- | ---- |
 |  LNCR_EXE  |  launcher file name  | Alpine.exe |
