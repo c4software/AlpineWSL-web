@@ -3,8 +3,6 @@
 Alpine Linux on WSL (Windows 10 1803 or later) with pre-installed web development tools
 based on [wsldl](https://github.com/yuk7/wsldl) and [AlpineWSL](https://github.com/yuk7/AlpineWSL)
 
-![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Alpine_Arch_Cent.png)
-
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/c4software/AlpineWSL-web/build-zip.yaml?style=flat-square)](https://github.com/c4software/AlpineWSL-web/actions/workflows/build-zip.yaml)
 [![Github All Releases](https://img.shields.io/github/downloads/c4software/AlpineWSL-web/total.svg?style=flat-square)](https://github.com/c4software/AlpineWSL-web/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
