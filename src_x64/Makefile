@@ -42,6 +42,7 @@ rootfs: base.tar.gz profile
 	sudo tar -zxpf base.tar.gz -C rootfs
 	sudo cp -f /etc/resolv.conf rootfs/etc/resolv.conf
 	sudo cp -f profile rootfs/etc/profile
+	sudo cp -f .bash_aliases rootfs/root/.bash_aliases
 	sudo chroot rootfs /sbin/apk update
 	sudo chroot rootfs /sbin/apk add bash
 	sudo chroot rootfs /sbin/apk add php83 php83-tokenizer php83-session php83-pdo php83-dom php83-xml php83-xmlwriter php83-fileinfo php83-pdo_sqlite php83-pdo_mysql php83-simplexml npm git vim
