@@ -1,23 +1,42 @@
-# AlpineWSL
-Alpine Linux on WSL (Windows 10 1803 or later)
-based on [wsldl](https://github.com/yuk7/wsldl)
+# AlpineWSL-web
+Alpine Linux on WSL (Windows 10 1803 or later) with pre-installed web development tools
+based on [wsldl](https://github.com/yuk7/wsldl) and [AlpineWSL](https://github.com/yuk7/AlpineWSL)
 
 ![screenshot](https://raw.githubusercontent.com/wiki/yuk7/wsldl/img/Alpine_Arch_Cent.png)
 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/yuk7/AlpineWSL/build-zip.yaml?style=flat-square)](https://github.com/yuk7/AlpineWSL/actions/workflows/build-zip.yaml)
-[![Github All Releases](https://img.shields.io/github/downloads/yuk7/AlpineWSL/total.svg?style=flat-square)](https://github.com/yuk7/AlpineWSL/releases/latest)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/c4software/AlpineWSL-web/build-zip.yaml?style=flat-square)](https://github.com/c4software/AlpineWSL-web/actions/workflows/build-zip.yaml)
+[![Github All Releases](https://img.shields.io/github/downloads/c4software/AlpineWSL-web/total.svg?style=flat-square)](https://github.com/c4software/AlpineWSL-web/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![License](https://img.shields.io/github/license/yuk7/AlpineWSL.svg?style=flat-square)
+![License](https://img.shields.io/github/license/c4software/AlpineWSL-web.svg?style=flat-square)
 
-### [Download](https://github.com/yuk7/AlpineWSL/releases/latest)
+### [Download](https://github.com/c4software/AlpineWSL-web/releases/latest)
 
+## What's included?
+This distribution comes with essential web development tools pre-installed:
+- **PHP 8.3** with extensions:
+  - php83-tokenizer
+  - php83-session
+  - php83-pdo
+  - php83-dom
+  - php83-xml
+  - php83-xmlwriter
+  - php83-fileinfo
+  - php83-pdo_sqlite
+  - php83-pdo_mysql
+  - php83-simplexml
+- **Node.js & npm** - JavaScript runtime and package manager
+- **Git** - Version control system
+- **Vim** - Text editor
+- **Bash** - Shell environment
+
+Perfect for getting started with web development on WSL without the hassle of setting up your environment!
 
 ## Requirements
-* Windows 10 1803 April 2018 Update x64/arm64 or later.
+* Windows 10 1803 April 2018 Update x64 or later.
 * Windows Subsystem for Linux feature is enabled.
 
 ## Install
-#### 1. [Download](https://github.com/yuk7/AlpineWSL/releases/latest) installer zip
+#### 1. [Download](https://github.com/c4software/AlpineWSL-web/releases/latest) installer zip
 
 #### 2. Extract all files in zip file to same directory
 
@@ -73,22 +92,16 @@ Usage :
 ```
 
 ## How-to-Build
-AlpineWSL can build on GNU/Linux or WSL.
+AlpineWSL-web can build on GNU/Linux or WSL.
 
 `curl`,`bsdtar`,`tar`(gnu) and `sudo` is required for build.
 ```shell
 $ make
 ```
 
-with flags:
-```
-$ make ARCH=arm64 OUT_ZIP=Alpine_arm64.zip
-```
-
 ### Basic Params
 |  Parameter |  Value  |  Default  |
 | ---- | ---- | ---- |
-|  ARCH  |  x64/arm64  | x64 |
 |  LNCR_EXE  |  launcher file name  | Alpine.exe |
 |  OUT_ZIP  |  zip file name  | Alpine.zip |
 |  DLR  |  file downloader  | curl |
