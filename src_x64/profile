@@ -9,3 +9,6 @@ for script in /etc/profile.d/*.sh ; do
                 . $script
         fi
 done
+
+# Alias definitions.
+alias serve='php -S localhost:9000'
